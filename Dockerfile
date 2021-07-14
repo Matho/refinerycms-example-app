@@ -16,8 +16,9 @@ RUN apt-get update && apt-get install -y \
     bash \
     imagemagick \
     python \
-    nodejs \
-    yarn
+    nodejs
+
+RUN npm install --global yarn
 
 WORKDIR /app
 
