@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y \
     cron \
     bash \
     imagemagick \
-    python
+    python \
+    nodejs
 
 WORKDIR /app
 
