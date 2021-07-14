@@ -16,7 +16,7 @@ Refinery::Resources.configure do |config|
   # Refer to config/initializers/refinery/dragonfly.rb for the full list of dragonfly configurations which can be used.
   # This includes all dragonfly config for Dragonfly v 1.1.1
 
-  # config.dragonfly_verify_urls     = true
+  config.dragonfly_verify_urls     = false
   # config.dragonfly_secret          = "a95a5e1d76b203fb822882eab93dc57327b7a2787ee819bd"
   # config.dragonfly_url_host        = ""
   # config.dragonfly_datastore_root_path = "/Users/bricesanchez/Sites/refinery/refinery-example-app/app_name/public/system/refinery/resources"
