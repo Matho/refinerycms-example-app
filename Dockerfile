@@ -1,4 +1,4 @@
-FROM registry.docker.matho.sk:6000/rpi-ruby-2.6.5-ubuntu-aarch64:latest
+FROM mathosk/rpi-ruby-2.6.5-ubuntu-aarch64:latest
 
 MAINTAINER Matho "martin.markech@matho.sk"
 
