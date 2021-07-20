@@ -40,7 +40,7 @@ RUN rm /etc/nginx/sites-enabled/default
 
 ADD .env.example .env.production
 
-RUN ASSET_PRECOMPILE_MODE=1 bundle exec rake assets:precompile
+RUN ASSET_PRECOMPILE_MODE=1 bundle exec rake assets:precompile RAILS_ENV=production --trace
 
 EXPOSE 80
 
