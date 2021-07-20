@@ -39,7 +39,8 @@ ADD config/etc/nginx/conf.d/nginx.docker.conf /etc/nginx/conf.d/default.conf
 RUN rm /etc/nginx/sites-enabled/default
 
 ADD .env.example .env.production
-RUN bundle exec rake assets:precompile
+
+RUN ASSET_PRECOMPILE_MODE=1 bundle exec rake assets:precompile
 
 EXPOSE 80
 
