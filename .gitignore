@@ -115,4 +115,5 @@ capybara-*html
 vendor/extensions/**/spec/dummy
 
 .env.*
+!.env.example
 config/secrets.yml
