@@ -1,3 +1,5 @@
 # Refinery Example App
 
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/refinery/refinery-example-app)
+## Github Actions
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Matho/refinerycms-example-app/Build)
+
