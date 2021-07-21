@@ -42,6 +42,8 @@ ADD .env.example .env.production
 
 RUN ASSET_PRECOMPILE_MODE=1 bundle exec rake assets:precompile RAILS_ENV=production --trace
 
+RUN echo $(date) > BUILD_DATE.txt
+
 EXPOSE 80
 
 CMD bin/run.docker.sh
