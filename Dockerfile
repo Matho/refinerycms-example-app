@@ -44,6 +44,8 @@ RUN ASSET_PRECOMPILE_MODE=1 bundle exec rake assets:precompile RAILS_ENV=product
 
 RUN echo $(date) > BUILD_DATE.txt
 
+RUN echo $(git log --pretty=format:'%h' -n 1) > DEPLOYED_REVISION.txt
+
 EXPOSE 80
 
 CMD bin/run.docker.sh
