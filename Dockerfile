@@ -44,7 +44,8 @@ RUN ASSET_PRECOMPILE_MODE=1 bundle exec rake assets:precompile RAILS_ENV=product
 
 RUN echo $(date) > BUILD_DATE.txt
 
-RUN echo $(git log --pretty=format:'%h' -n 1) > DEPLOYED_REVISION.txt
+ARG GITHUB_SHA
+RUN echo $GITHUB_SHA > DEPLOYED_REVISION.txt
 
 EXPOSE 80
 

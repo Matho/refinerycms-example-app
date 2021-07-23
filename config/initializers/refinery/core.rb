@@ -13,7 +13,7 @@ Refinery::Core.configure do |config|
   # config.base_cache_key = :refinery
 
   # Site name
-  config.site_name = "Edge demo rev #{File.read('DEPLOYED_REVISION.txt') rescue ''} / Refinery CMS rev #{`cat Gemfile.lock | grep 'remote: https://github.com/refinery/refinerycms$' -A 1 | grep 'revision'`.split('revision:')[1][0..7] }".html_safe
+  config.site_name = "Edge demo rev #{File.read('DEPLOYED_REVISION.txt')[0..7] rescue ''} / Refinery CMS rev #{`cat Gemfile.lock | grep 'remote: https://github.com/refinery/refinerycms$' -A 1 | grep 'revision'`.split('revision:')[1][0..7] }".html_safe
 
   # This activates Google Analytics tracking within your website. If this
   # config is left blank or set to UA-xxxxxx-x then no remote calls to
